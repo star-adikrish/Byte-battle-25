@@ -1,70 +1,72 @@
+# Weather & Air Quality Checker 🌤️
 
-Given the weather api url "WEATHER_URL" and api key "API_KEY"
-WEATHER_URL = "http://api.weatherapi.com/v1"
-API_KEY = "API_KEY"
+A modern web application that provides real-time weather and air quality information for any city or airport code worldwide.
 
-Scenario:
+## Features ✨
 
-When the user selects a CityName and aqi check-box
-then fetch the weather and aqi details from the weather api end-point "/current.json" using a GET HTTP call. Provide query params key=API_KEY&q=CityName&aqi=yes
+- **Global Coverage**: Get weather data for any city name or airport code worldwide
+- **Real-time Weather**: Current temperature, humidity, wind speed, pressure, and visibility
+- **Air Quality Index**: Comprehensive AQI data including PM2.5, PM10, CO, NO2, O3, SO2
+- **Search History**: Track your recent weather searches
+- **Responsive Design**: Works seamlessly on desktop and mobile devices
+- **Multi-page Interface**: Home, About, Contact, and Blog sections
 
-This will return a JSON like
-"""
-{
-    "location": {
-        "name": "Bangalore",
-        "region": "Karnataka",
-        "country": "India",
-        "lat": 12.9833,
-        "lon": 77.5833,
-        "tz_id": "Asia/Kolkata",
-        "localtime_epoch": 1764931171,
-        "localtime": "2025-12-05 16:09"
-    },
-    "current": {
-        "last_updated_epoch": 1764930600,
-        "last_updated": "2025-12-05 16:00",
-        "temp_c": 25.3,
-        "temp_f": 77.5,
-        "is_day": 1,
-        "condition": {
-            "text": "Partly cloudy",
-            "icon": "//cdn.weatherapi.com/weather/64x64/day/116.png",
-            "code": 1003
-        },
-        "wind_mph": 12.1,
-        "wind_kph": 19.4,
-        "wind_degree": 69,
-        "wind_dir": "ENE",
-        "pressure_mb": 1017.0,
-        "pressure_in": 30.03,
-        "precip_mm": 0.03,
-        "precip_in": 0.0,
-        "humidity": 69,
-        "cloud": 75,
-        "feelslike_c": 26.8,
-        "feelslike_f": 80.3,
-        "windchill_c": 23.6,
-        "windchill_f": 74.5,
-        "heatindex_c": 25.4,
-        "heatindex_f": 77.6,
-        "dewpoint_c": 17.3,
-        "dewpoint_f": 63.1,
-        "vis_km": 6.0,
-        "vis_miles": 3.0,
-        "uv": 0.7,
-        "gust_mph": 16.6,
-        "gust_kph": 26.6,
-        "air_quality": {
-            "co": 336.85,
-            "no2": 4.55,
-            "o3": 99.0,
-            "so2": 4.05,
-            "pm2_5": 13.35,
-            "pm10": 13.65,
-            "us-epa-index": 1,
-            "gb-defra-index": 2
-        }
-    }
-}
-"""
+## Usage 🚀
+
+1. Enter any city name (e.g., "Mumbai", "New York") or airport code (e.g., "LAX", "DEL")
+2. Check the "Include Air Quality" option to get AQI data
+3. Click "Get Weather Data" or press Enter
+4. View detailed weather and air quality information
+
+## API Integration 🔌
+
+The application uses the WeatherAPI service:
+
+- **Base URL**: `https://api.weatherapi.com/v1`
+- **Endpoint**: `/current.json`
+- **Parameters**: `key`, `q` (city/airport), `aqi` (yes/no)
+
+## Project Structure 📁
+
+```
+├── index.html          # Main HTML file
+├── styles.css          # Styling
+├── weather.js          # Weather application logic
+├── config.js           # API configuration
+├── .github/workflows/  # GitHub Actions deployment
+└── README.md           # This file
+```
+
+## Deployment 🚀
+
+### GitHub Secrets Setup
+
+1. Go to your GitHub repository
+2. Navigate to **Settings** > **Secrets and variables** > **Actions**
+3. Add a new repository secret:
+   - **Name**: `API_KEY`
+   - **Value**: Your WeatherAPI key
+
+### Local Development
+
+For local development, replace `your-api-key-here` in `config.js` with your actual WeatherAPI key.
+
+## Technologies Used 💻
+
+- HTML5
+- CSS3
+- Vanilla JavaScript
+- WeatherAPI
+- GitHub Actions
+- GitHub Pages
+
+## Team 👥
+
+**Super 4 Team** - NPS East
+- Krishna Agrawal - Lead Developer
+- Sri Krishna & Darsh Goyal - Hardware Development
+- Tanay Acharya - Visual Communications
+
+---
+
+*© 2025 NPS East. All rights reserved. | Powered by Super 4*
