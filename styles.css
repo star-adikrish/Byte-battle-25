@@ -231,7 +231,6 @@ input[type="text"]:focus {
 
 .logo h3 {
     color: white;
-    margin-bottom: 5px;
     font-size: 18px;
     font-weight: 600;
 }
@@ -698,11 +697,11 @@ input[type="text"]:focus {
 }
 
 .blog-card {
-    background: rgba(255, 255, 255, 0.9);
-    backdrop-filter: blur(10px);
+    background: lightcyan;
+    /* backdrop-filter: blur(10px); */
     border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    box-shadow: 0 15px 35px rgba(128, 3, 105, 0.1);
     transition: transform 0.3s;
     position: relative;
 }
@@ -733,7 +732,7 @@ input[type="text"]:focus {
     font-size: 80px;
     text-align: center;
     padding: 40px;
-    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    background: linear-gradient(135deg, #629dd7, #1172d3);
 }
 
 .blog-card .blog-meta {
@@ -743,13 +742,14 @@ input[type="text"]:focus {
 }
 
 .blog-date, .blog-category {
-    font-size: 14px;
-    color: #7f8c8d;
+    font-size: 18px;
+    color: darkgreen;
+    padding-top: 5px;
 }
 
 .blog-category {
-    background: #3498db;
-    color: white;
+    background: maroon;
+    color: skyblue;
     padding: 3px 10px;
     border-radius: 10px;
 }
@@ -761,7 +761,7 @@ input[type="text"]:focus {
 }
 
 .blog-card p {
-    color: #7f8c8d;
+    color: #0e1010;
     margin: 0 30px 20px;
     line-height: 1.6;
 }
