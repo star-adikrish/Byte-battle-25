@@ -33,7 +33,6 @@ The application uses the WeatherAPI service:
 ├── styles.css          # Styling
 ├── weather.js          # Weather application logic
 ├── config.js           # API configuration
-├── .github/workflows/  # GitHub Actions deployment
 └── README.md           # This file
 ```
 
