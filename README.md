@@ -39,25 +39,16 @@ The application uses the WeatherAPI service:
 
 ## Deployment 🚀
 
-### GitHub Secrets Setup
+### GitHub Pages
 
-1. Go to your GitHub repository
-2. Navigate to **Settings** > **Secrets and variables** > **Actions**
-3. Add a new repository secret:
-   - **Name**: `API_KEY`
-   - **Value**: Your WeatherAPI key
-
-### Local Development
-
-For local development, replace `your-api-key-here` in `config.js` with your actual WeatherAPI key.
+- https://star-adikrish.github.io/Byte-battle-25/
 
 ## Technologies Used 💻
 
 - HTML5
 - CSS3
-- Vanilla JavaScript
+- Plain JavaScript
 - WeatherAPI
-- GitHub Actions
 - GitHub Pages
 
 ## Team 👥

@@ -13,7 +13,7 @@ async function getWeather() {
     try {
         hideError();
         const aqiParam = includeAqi ? 'yes' : 'no';
-        const url = `${WEATHER_URL}/current.json?key=${window.API_KEY}&q=${encodeURIComponent(city)}&aqi=${aqiParam}`;
+        const url = `${WEATHER_URL}/current.json?key=e84a8261d3cd4786a8281927250707&q=${encodeURIComponent(city)}&aqi=${aqiParam}`;
         
         const response = await fetch(url);
         const data = await response.json();
