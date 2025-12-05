@@ -229,8 +229,15 @@ input[type="text"]:focus {
     box-shadow: 0 25px 50px rgba(0,0,0,0.15);
 }
 
-.weather-card h3, .aqi-card h3, .logo h3 {
+.logo h3 {
     color: white;
+    margin-bottom: 5px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.weather-card h3, .aqi-card h3 {
+    color: black;
     margin-bottom: 20px;
     font-size: 18px;
     font-weight: 600;
